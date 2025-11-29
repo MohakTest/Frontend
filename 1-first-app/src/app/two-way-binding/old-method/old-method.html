@@ -1,0 +1,17 @@
+<div class = 'parent'>
+    <p>I am the parent Component</p>
+    <div>Parent Name : {{parentName}}</div>
+
+    <!--Both are same, shorter sytax-->
+    <!-- sending value = [childName]
+    receiving val from event = (childNameChange)
+    short = [(childName)] -->
+
+    <!--Method - 1-->
+    <!-- <app-child-component [childName] = 'parentName' (childNameChange) = 'getFromParent($event)'></app-child-component> -->
+    
+    <!--Method - 2-->
+    <app-child-component [(childName)] = 'parentName'></app-child-component>
+
+</div>
+
